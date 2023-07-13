@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connect X - web Beta</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <h1>Connect X - web Beta</h1>
+        <div class="board"></div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="main.js"></script>
+        <script>
+            async function initialize() {
+                cpu_turn();
+                await mutex.lock();
+            }
+
+            initialize();
+        </script>
+    </body>
+</html>
